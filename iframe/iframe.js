@@ -65,11 +65,11 @@ var appSettings = {
         //if (row === 0 || this.instance.getData()[row][col] === 'readOnly') {
         //    cellProperties.readOnly = true; // make cell read-only if it is first row or the text reads 'readOnly'
         //}
-        if (row === 0) {
-            cellProperties.renderer = firstRowRenderer; // uses function directly
-        } else {
+        //if (row === 0) {
+        //    cellProperties.renderer = firstRowRenderer; // uses function directly
+        //} else {
             cellProperties.renderer = negativeValueRenderer; // uses lookup map
-        }
+        //}
 
         return cellProperties;
     }
@@ -86,18 +86,18 @@ $(document).ready(function(){
 
     Handsontable.renderers.registerRenderer('negativeValueRenderer', negativeValueRenderer);
     Handsontable.hooks.add('beforeRenderer', function(td, r, c, p, pv, cp){
-        if (cp.color) {
-            switch (cp.color) {
-                case "white":
-                    td.style.backgroundColor = cp.color;
-                    td.style.color = "black";
-                    break;
-                default :
-                    td.style.backgroundColor = cp.color;
-                    td.style.color = "white";
-                    break;
-            }
-        }
+        //if (cp.color) {
+        //    switch (cp.color) {
+        //        case "white":
+        //            td.style.backgroundColor = cp.color;
+        //            td.style.color = "black";
+        //            break;
+        //        default :
+        //            td.style.backgroundColor = cp.color;
+        //            td.style.color = "white";
+        //            break;
+        //    }
+        //}
     }, hot);
 
     $(document).on({
@@ -118,6 +118,9 @@ $(document).ready(function(){
     });
 
     $("#edit-header").on("click", function(){
+        if (colHeaders instanceof Array) {
+            $("#header-input").val(colHeaders.join("\n"));
+        }
         $("#header-input-div").fadeIn();
     });
 
@@ -170,16 +173,16 @@ $(document).ready(function(){
         appSettings.rowHeaders = !appSettings.rowHeaders;
         var mergedCells = [].concat(hot.getPlugin("mergeCells").mergedCellsCollection.mergedCells);
         var data = hot.getData(), colorInfo = [];
-        for (var i = 0; i < data.length; i ++){
-            colorInfo[i] = [];
-            for (var j = 0; j < data[i].length; j ++){
-                if (hot.getCell(i, j) && $(hot.getCell(i, j)).data("color")) {
-                    colorInfo[i][j] = $(hot.getCell(i, j)).data("color");
-                } else {
-                    colorInfo[i][j] = "";
-                }
-            }
-        }
+        //for (var i = 0; i < data.length; i ++){
+        //    colorInfo[i] = [];
+        //    for (var j = 0; j < data[i].length; j ++){
+        //        if (hot.getCell(i, j) && $(hot.getCell(i, j)).data("color")) {
+        //            colorInfo[i][j] = $(hot.getCell(i, j)).data("color");
+        //        } else {
+        //            colorInfo[i][j] = "";
+        //        }
+        //    }
+        //}
 
         hot.updateSettings({
             "colHeaders": appSettings.colHeaders?colHeaders:false,
@@ -187,17 +190,27 @@ $(document).ready(function(){
             mergeCells: mergedCells
         });
 
-        for (i = 0; i < colorInfo.length; i ++){
-            for (j = 0; j < colorInfo[i].length; j ++){
-                if (hot.getCell(i, j) && colorInfo[i][j] != ""){
-                    $(hot.getCell(i, j)).data("color", colorInfo[i][j]).addClass("bg-" + colorInfo[i][j]);
-                    //hot.getCell(i, j).style.backgroundColor = colorInfo[i][j];
-                    //hot.getCell(i, j).style.color = colorInfo[i][j]=="white"?"black":"white";
-                }
-            }
-        }
+        //for (i = 0; i < colorInfo.length; i ++){
+        //    for (j = 0; j < colorInfo[i].length; j ++){
+        //        if (hot.getCell(i, j) && colorInfo[i][j] != ""){
+        //            //$(hot.getCell(i, j)).data("color", colorInfo[i][j]).addClass("bg-" + colorInfo[i][j]);
+        //            //hot.getCell(i, j).style.backgroundColor = colorInfo[i][j];
+        //            //hot.getCell(i, j).style.color = colorInfo[i][j]=="white"?"black":"white";
+        //        }
+        //    }
+        //}
 
         hot.render();
+
+        if (appSettings.colHeaders) {
+            $(".bg-red").removeClass("bg-red").data("color",null).next().addClass("bg-red").data("color", "red");
+            $(".bg-black").removeClass("bg-black").data("color",null).next().addClass("bg-black").data("color", "black");
+            $(".bg-blue").removeClass("bg-blue").data("color",null).next().addClass("bg-blue").data("color", "blue");
+        } else {
+            $(".bg-red").removeClass("bg-red").data("color",null).prev().addClass("bg-red").data("color", "red");
+            $(".bg-black").removeClass("bg-black").data("color",null).prev().addClass("bg-black").data("color", "black");
+            $(".bg-blue").removeClass("bg-blue").data("color",null).prev().addClass("bg-blue").data("color", "blue");
+        }
     });
 
     $('#add-more').on("click", function(){
@@ -440,13 +453,13 @@ function generateData(rows, cols){
     return res;
 }
 
-function firstRowRenderer(instance, td, row, col, prop, value, cellProperties) {
-    Handsontable.renderers.TextRenderer.apply(this, arguments);
-    td.style.fontWeight = 'bold';
-    td.style.color = 'green';
-    td.style.background = '#CEC';
-}
-
+//function firstRowRenderer(instance, td, row, col, prop, value, cellProperties) {
+//    Handsontable.renderers.TextRenderer.apply(this, arguments);
+//    td.style.fontWeight = 'bold';
+//    td.style.color = 'green';
+//    td.style.background = '#CEC';
+//}
+//
 function negativeValueRenderer(instance, td, row, col, prop, value, cellProperties) {
     if (td.className != "" || td.style.color instanceof String) return;
     Handsontable.renderers.TextRenderer.apply(this, arguments);
