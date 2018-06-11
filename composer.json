@@ -1,0 +1,19 @@
+{
+    "name": "handsonetables/app",
+    "description": "Handsonetables App",
+    "keywords": ["javascript", "jquery"],
+    "license": "MIT",
+    "type": "project",
+    "require": {
+    },
+    "require-dev": {
+    },
+    "autoload": {
+    },
+    "autoload-dev": {
+    },
+    "scripts": {
+    },
+    "config": {
+    }
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>HandsonTable Datasheet</title>
+    <link rel="stylesheet" href="assets/css/lib/jquery-ui.min.css"/>
+    <link rel="stylesheet" href="assets/css/lib/jquery.fs.dropper.css"/>
+    <link rel="stylesheet" href="assets/css/app/index.css"/>
+</head>
+<body>
+
+<div id="main-container">
+    <div id="buttons">
+        <div id="app-buttons">
+            <button class="normal-btn" id="plus-button">+</button>
+        </div>
+        <div id="tag-buttons">
+            <button class="normal-btn" id="plus-tag-button">+ Tag</button>
+        </div>
+    </div>
+    <div id="dropzones">
+        <div class="dropzone">
+            <div class="button">
+                <img src="assets/img/drop-file-here.png"/>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="iframe-container">
+    <iframe></iframe>
+</div>
+
+<div id="json-frame">
+    <iframe></iframe>
+    <button id="json-save-btn">Save</button>
+    <button id="json-close-btn">Close</button>
+</div>
+
+<div id="alert"></div>
+
+<div id="confirmation" class="dialog">
+    <div class="dialog-body">
+        <div class="dialog-header">Confirm</div>
+        <div class="dialog-content"></div>
+        <div class="dialog-footer">
+            <input type="hidden" id="confirm-action" />
+            <button id="confirm" class="confirm">Confirm</button>
+            <button class="dialog-close" dismiss="#confirmation">Close</button>
+        </div>
+    </div>
+</div>
+
+<div id="change-name" class="dialog">
+    <div class="dialog-body">
+        <div class="dialog-header">Change Name</div>
+        <div class="dialog-content">
+            <div class="form-group">
+                <label class="form-control" for="save-file-name">New Name: </label>
+                <input class="form-control" type="text" id="save-file-name" placeholder="<Type>..."/>
+                <input type="hidden" id="save-target"/>
+            </div>
+            <div class="dialog-message">
+                Name must contain only alphabets.
+            </div>
+        </div>
+        <div class="dialog-footer">
+            <button id="save-confirm" class="confirm">Confirm</button>
+            <button class="dialog-close" dismiss="#change-name">Close</button>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="assets/js/lib/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="assets/js/lib/jquery-ui.min.js"></script>
+<script type="text/javascript" src="assets/js/lib/jquery.fs.dropper.js"></script>
+<script type="text/javascript" src="assets/js/lib/jquery.ui-contextmenu.min.js"></script>
+<script type="text/javascript" src="assets/js/app/util.js"></script>
+<script type="text/javascript" src="assets/js/app/index.js"></script>
+</body>
+</html>

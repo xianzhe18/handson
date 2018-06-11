@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="../assets/css/lib/fontawesome-all.css"/>
+    <link rel="stylesheet" href="../assets/css/lib/handsontable.full.min.css"/>
+    <link rel="stylesheet" href="../assets/css/app/iframe.css"/>
+</head>
+<body>
+
+<div id="search-panel">
+    <input id="search_field" type="search" placeholder="Search">
+    <div id="external-btns">
+        <button id="edit-header" title="Edit header"><i class="fa fa-braille"></i> </button>
+        <button id="export-csv" title="Export .csv file"><i class="fa fa-file-excel"></i> </button>
+        <button id="toggle-header" title="Toggle Header"><i class="fa fa-cubes"></i> </button>
+        <button id="add-more" title="Add More Rows"><i class="fa fa-sort-amount-down"></i> </button>
+    </div>
+</div>
+
+<div id="table-container"></div>
+
+<div id="header-input-div">
+    <div>
+        <textarea id="header-input"></textarea>
+    </div>
+    <div>
+        <button id="header-confirm" class="btn size-medium bg-blue text-white shadow hover-moveup">Confirm</button>
+        <button id="header-cancel" class="btn size-medium shadow hover-moveup">Cancel</button>
+    </div>
+</div>
+
+<div id="page-cover"></div>
+
+<button id="close-btn">X</button>
+
+<script type="text/javascript" src="../assets/js/lib/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="../assets/js/lib/sheetclip.js"></script>
+<script type="text/javascript" src="../assets/js/lib/handsontable.full.min.js"></script>
+<script type="text/javascript" src="iframe.js"></script>
+
+</body>
+</html>

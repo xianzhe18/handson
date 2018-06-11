@@ -1,0 +1,230 @@
+*{
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-size: 11px;
+}
+
+:focus{
+    outline: none;
+}
+body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    overflow: auto;
+}
+.dialog{
+    background-color: rgba(45,48,53,.8);
+    color: #aaa;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 100000;
+    display: none;
+}
+.dialog-body{
+    background-color: rgb(34,37,42);
+    border-radius: 10px;
+    width: 300px;
+    margin: 10% auto;
+}
+.dialog-header{
+    background-color: rgb(69,73,85);
+    border-radius: 10px 10px 0 0;
+    font-size: 1em;
+    padding: 10px;
+}
+.dialog-message{
+    display: none;
+    color: red;
+    background-color: rgb(200,200,200);
+    padding: 5px 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: solid 1px red;
+}
+.dialog-content{
+    padding: 30px 20px;
+}
+.dialog-footer{
+    border-top: dashed 1px rgb(69,73,85);
+    padding: 20px;
+    text-align: right;
+}
+.dialog-footer button{
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 10px;
+}
+.dialog-footer button.dialog-close{
+    background-color: rgb(69,73,85);
+}
+.dialog-footer button.confirm{
+    background-color: rgb(47,158,214);
+}
+.form-group{
+    margin-bottom: 10px;
+}
+.form-control{
+    margin: 10px 0;
+    width: 100%;
+}
+input.form-control,select.form-control,textarea.form-control{
+    color: #aaa;
+    padding: 10px 0;
+    border-radius: 5px;
+    background-color: rgb(69,73,85);
+    font-size: 12px;
+    line-height: 11px;
+    border: none;
+    overflow: hidden;
+}
+textarea.form-control[readonly]{
+    resize: none;
+}
+
+#main-container{
+    width: 80%;
+    height: 80%;
+    margin: 0 auto;
+}
+#main-container #buttons{
+    margin-top: 30px;
+}
+#main-container #buttons > div{
+    display: inline-table;
+}
+#alert{
+    background-color: rgba(0, 173, 244, 0.8);
+    color: white;
+    position: absolute;
+    width: 200px;
+    padding: 1em;
+    margin: 10px;
+    right: 0;
+    top: -200px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+#iframe-container{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    z-index: 10;
+}
+#iframe-container iframe{
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+.normal-btn{
+    background-color: #ffffff;
+    color: black;
+    cursor: pointer;
+    padding: 5px 15px;
+    border: solid black 2px;
+    border-radius: 2em;
+    font-size: 1em;
+    font-weight: bold;
+    display: block;
+    margin: 10px;
+}
+#dropzones{
+    position: absolute;
+    right: 100px;
+    top: 100px;
+}
+.dropzone{
+    width: 25vw;
+    height: 21vw;
+    min-width: 300px;
+    min-height: 250px;
+    margin: 10px 0;
+}
+.dropzone:first-child{
+    margin-top: 0;
+}
+.dropzone:last-child{
+    margin-bottom: 0;
+}
+.dropzone input[type='file']{
+    display: none;
+}
+.dropzone div.button{
+    width: 100%;
+    height: 100%;
+    color: white;
+    text-align: center;
+    float: left;
+    margin: 0 auto;
+    cursor: pointer;
+    box-shadow: 3px 4px 5px gray;
+}
+.dropzone div.button img{
+    width: 100%;
+    height: 100%;
+}
+.dropzone .upload-check{
+    position: absolute;
+    top: 100%;
+    background-color: #7FBA00;
+    color: white;
+    border-radius: 50%;
+    width: 1.5em;
+    height: 1.5em;
+    text-align: center;
+}
+#show-json-frame{
+    position: absolute;
+    right: 1em;
+    top: 1em;
+    padding: 5px;
+    background: white;
+    border: solid 1px gray;
+    cursor: pointer;
+}
+#json-frame{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: none;
+    z-index: 10;
+}
+#json-frame iframe{
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+#json-frame #json-save-btn{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50px;
+    margin: 1em;
+    background: white;
+    border: solid 1px gray;
+    cursor: pointer;
+    padding: 5px;
+}
+#json-frame #json-close-btn{
+    position: absolute;
+    top: 30px;
+    right: 0;
+    width: 50px;
+    margin: 1em;
+    background: white;
+    border: solid 1px gray;
+    cursor: pointer;
+    padding: 5px;
+}
