@@ -1,0 +1,22 @@
+[
+  {
+    "value": "0",
+    "name": "Influencer – PayPal"
+  },
+  {
+    "value": "1",
+    "name": "Influencer-    Non-PayPal"
+  },
+  {
+    "value": "2",
+    "name": "Wire to USA – SWIFT code"
+  },
+  {
+    "value": "3",
+    "name": "Wire to Australia – BSB\\Account"
+  },
+  {
+    "value": "4",
+    "name": "Other"
+  }
+]
