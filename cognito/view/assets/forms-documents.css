@@ -1,0 +1,28 @@
+
+
+.cognito .c-field.c-forms-settings-documents {overflow:visible;padding:0;position:relative;padding-left:20px;clear:both;}
+#edit-notification-dialog .c-field.c-forms-settings-documents{padding-left:26px;}
+#edit-notification-dialog .c-field.c-forms-settings-documents .c-forms-modal-menu{margin-left:26px;}
+
+
+
+.cognito .c-field.c-forms-settings-documents .mceNonEditable {color: Black!important;border-radius:4px;padding:0 2px;display: inline-block;overflow:visible;margin-top:0;background:#f3f3f3;}
+.cognito .c-forms-settings-documents-button{position:absolute;top:-30px;right:0;background:#00B4AC;color:white;border:1px solid #ccc;padding:2px;font-family:'Open Sans Condensed';border-radius:4px;}
+.cognito .c-forms-settings-submission .c-forms-modal-menu{left:20px;}
+.cognito .c-field.c-forms-settings-documents .c-forms-nav-item{margin-top:5px;margin-bottom:0;}
+
+.c-forms-settings-documents .c-forms-nav-item .c-forms-nav-item-title, .c-forms-settings-documents .c-forms-nav-item .c-forms-nav-item-detail{padding-left:10px;word-wrap:normal;}
+.c-forms-document-type{display:block;position:absolute;left:5px;top:50%;-webkit-transform: translateY(-50%);transform:translateY(-50%);font-size:13px;color:#666;}
+
+
+.c-forms-nav-item:hover { background: #f9fdfc; transition: 0.4s background-color;}
+.c-forms-nav-item input[type=checkbox]:checked + .c-forms-document-type i:before {content:"\2713\00a0";color:#444;font-weight:bold;}
+.c-forms-nav-item input[type=checkbox]{display:none!important;}
+.c-forms-nav-item input[type=checkbox]:checked{display:none!important;}
+
+@media screen and (max-width: 562px) {
+	
+	.c-modal-nav-col-container{width:100%!important;}
+	.cognito #manageTemplatesDialog .c-span-2 .c-span-1{width:100%!important;}
+
+}
