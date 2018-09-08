@@ -30,10 +30,10 @@ function oAuthSignIn($clientID, $clientSecret, $scope){
 function getUserAccessToken($code){
     $clientID = $_SESSION['client-id'];
     $clientSecret = $_SESSION['client-secret'];
-    $authorization = 'Basic ' . base64_encode($clientID . ':' . $clientSecret);
+    $authorization = 'Authorization = Basic ' . base64_encode("$clientID:$clientSecret");
 
     $header = 'Content-Type = application/x-www-form-urlencoded' . PHP_EOL . $authorization;
-    echo $header;
+
     $requestBody = array(
         "grant_type" => "authorization_code",
         "code" => $code,
@@ -48,11 +48,16 @@ function getUserAccessToken($code){
         http_build_query($requestBody));
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
 
-    $contents = json_decode(curl_exec($ch));
-var_dump($contents);
+    $output = curl_exec($ch);
+    $contents = json_decode($output);
+    curl_close($ch);
+
+    echo $contents;
+
     $_SESSION['auth'] = true;
     $_SESSION['access-token'] = $contents['access_token'];
     $_SESSION['expires-in'] = $contents['expires_in'];
     $_SESSION['expires-from'] = time();
     $_SESSION['refresh-token'] = $contents['refresh_token'];
+    die();
 }

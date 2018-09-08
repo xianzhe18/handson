@@ -1,4 +1,6 @@
 <?php
+session_start();
+
 include_once('functions.php');
 
 if (isset($_POST['username']) && isset($_POST['runame']) && isset($_POST['scope']) ){
