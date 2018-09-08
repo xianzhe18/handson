@@ -45,7 +45,7 @@ function getUserAccessToken($code){
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
 
     $contents = json_decode(curl_exec($ch));
-
+var_dump($contents);
     $_SESSION['auth'] = true;
     $_SESSION['access-token'] = $contents['access_token'];
     $_SESSION['expires-in'] = $contents['expires_in'];
