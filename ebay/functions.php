@@ -52,6 +52,7 @@ function getUserAccessToken($code){
     $contents = json_decode($output);
     curl_close($ch);
 
+    echo curl_error($ch);
     echo $contents;
 
     $_SESSION['auth'] = true;
