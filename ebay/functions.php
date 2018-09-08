@@ -19,6 +19,8 @@ function checkSession(){
  * @return bool
  */
 function oAuthSignIn($clientID, $clientSecret, $scope){
+    $_SESSION['client-id'] = $clientID;
+    $_SESSION['client-secret'] = $clientSecret;
     $authUrl = "https://signin.sandbox.ebay.com/authorize?client_id=$clientID&redirect_uri=$clientSecret&response_type=code&scope=$scope";
 
     header("Location: $authUrl");
@@ -29,7 +31,9 @@ function getUserAccessToken($code){
     $clientID = $_SESSION['client-id'];
     $clientSecret = $_SESSION['client-secret'];
     $authorization = 'Basic ' . base64_encode($clientID . ':' . $clientSecret);
+
     $header = 'Content-Type = application/x-www-form-urlencoded' . PHP_EOL . $authorization;
+    echo $header;
     $requestBody = array(
         "grant_type" => "authorization_code",
         "code" => $code,
