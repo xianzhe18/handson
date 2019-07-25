@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SVG Maker</title>
+    <link rel="stylesheet" href="./assets/css/app.css"/>
+</head>
+<body>
+<div id="input-panel">
+    <div>
+        <label>Finances</label>
+        <input type="number" min="0" max="10" id="finance-input" value="10"/>
+    </div>
+    <div>
+        <label>Relationships</label>
+        <input type="number" min="0" max="10" id="relationship-input" value="6"/>
+    </div>
+    <div>
+        <button id="draw-btn">Draw</button>
+    </div>
+</div>
+<canvas id="c"></canvas>
+<div id="svg-panel">
+
+</div>
+
+<script type="text/javascript" src="assets/js/jquery.js"></script>
+<script type="text/javascript" src="assets/js/fabric.min.js"></script>
+<script type="text/javascript" src="assets/js/fabric.canvasex.js"></script>
+<script type="text/javascript" src="assets/js/app.js"></script>
+
+</body>
+</html>
