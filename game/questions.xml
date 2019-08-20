@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?><questions>
+	<category>
+		<thumb name="IQ Questions (Audio)">assets/item_thumb_1.png</thumb>
+		<thumb name="Math Questions">assets/item_thumb_2.png</thumb>
+		<thumb name="Math Puzzles (Audio)">assets/item_thumb_5.png</thumb>
+		<thumb name="Video">assets/item_thumb_4.png</thumb>
+		<thumb name="All">assets/item_thumb_3.png</thumb>
+	</category>
+	
+	<item>
+		<category>Multiple Choices</category>
+		<landscape>
+			<question type="text" top="15" audio="assets/sounds/questions/iq_q1.ogg"><![CDATA[ werwer? ]]></question>
+			<answers correctAnswer="2">
+					<answer type="text" width="90" height="10" top="35" fontSize="30" lineHeight="30" offsetTop="-10"><![CDATA[Space]]></answer>
+				<answer width="90" height="10" top="47" type="text" fontSize="30" lineHeight="30" offsetTop="-10"><![CDATA[raks]]></answer>
+				<answer width="90" height="10" top="59" type="text" fontSize="30" lineHeight="30" offsetTop="-10"><![CDATA[7Eleven]]></answer>
+				<answer width="90" height="10" top="71" type="text" fontSize="30" lineHeight="30" offsetTop="-10"><![CDATA[Sixteen]]></answer>
+				<answer width="90" height="10" top="85" type="text" fontSize="30" lineHeight="30" offsetTop="-10" submit="true"><![CDATA[Done]]></answer>
+			</answers>
+			<inputs/>
+		</landscape>
+		
+		<portrait>
+			<question type="text" fontSize="30" top="13" lineHeight="30" audio="assets/sounds/questions/iq_q1.ogg"><![CDATA[ Which sdeos he love? ]]></question>
+			<answers correctAnswer="1">
+				<answer top="25" type="image" width="25" left="17">assets/questions/shape1.png</answer>
+				<answer top="25" type="image" width="25" left="57">assets/questions/shape2.png</answer>
+				<answer top="43" type="image" width="25" left="17">assets/questions/shape3.png</answer>
+				<answer top="43" type="image" width="25" left="57">assets/questions/shape4.png</answer>
+				<answer top="63" type="image" width="25" left="36">assets/questions/shape6.png</answer>
+				<answer top="83" type="text" submit="true" left="23" width="50" fontSize="30" lineHeight="30" height="10"><![CDATA[Done]]></answer>
+			</answers>
+			<inputs/>
+		</portrait>
+	</item>
+	
+	<item>
+		<category>Multiple Choices</category>
+		<landscape>
+			<question type="text"><![CDATA[Which is not number?]]></question>
+			<answers correctAnswer="1,3,4">
+				<answer type="text" top="41" width="35" left="14"><![CDATA[Space]]></answer>
+				<answer top="41" type="text" left="51" width="35"><![CDATA[999]]></answer>
+				<answer top="58" type="text" left="14" width="35"><![CDATA[7Eleven]]></answer>
+				<answer top="58" type="text" left="51" width="35"><![CDATA[Sixteen]]></answer>
+				<answer top="75" type="text" submit="true" left="32" width="35"><![CDATA[Done]]></answer>
+			</answers>
+			<inputs/>
+			<explanation/>
+		</landscape>
+		
+		<portrait>
+			<question type="text" fontSize="35" top="20" lineHeight="35"><![CDATA[ Which is not number? ]]></question>
+			<answers correctAnswer="1,3,4">
+				<answer type="text" width="90" height="10" top="35" fontSize="30" lineHeight="30" offsetTop="-10"><![CDATA[Space]]></answer>
+				<answer width="90" height="10" top="47" type="text" fontSize="30" lineHeight="30" offsetTop="-10"><![CDATA[999]]></answer>
+				<answer width="90" height="10" top="59" type="text" fontSize="30" lineHeight="30" offsetTop="-10"><![CDATA[7Eleven]]></answer>
+				<answer width="90" height="10" top="71" type="text" fontSize="30" lineHeight="30" offsetTop="-10"><![CDATA[Sixteen]]></answer>
+				<answer width="90" height="10" top="85" type="text" fontSize="30" lineHeight="30" offsetTop="-10" submit="true"><![CDATA[Done]]></answer>
+			</answers>
+			<inputs/>
+			<explanation/>
+		</portrait>
+	</item>
+	
+	<item>
+		<category>Multiple Choices</category>
+		<landscape>
+			<question type="text" top="15"><![CDATA[Choose vegetables.]]></question>
+			<answers correctAnswer="1,2">
+				<answer top="34" type="text" width="40" left="30" height="11"><![CDATA[Tomato]]></answer>
+				<answer top="46" type="text" left="30" width="40" height="11"><![CDATA[cucumber]]></answer>
+				<answer top="58" type="text" left="30" width="40" height="11"><![CDATA[apple]]></answer>
+				<answer top="70" type="text" left="30" width="40" height="11"><![CDATA[orange]]></answer>
+				<answer top="82" type="text" left="30" width="40" height="11" submit="true"><![CDATA[Done]]></answer>
+			</answers>
+			<inputs/>
+		</landscape>
+		
+		<portrait>
+			<question type="text" fontSize="35" lineHeight="35" top="20"><![CDATA[Choose vegetables.]]></question>
+			<answers correctAnswer="1,2">
+				<answer type="text" width="90" height="10" top="36" fontSize="25" lineHeight="25" offsetTop="-15"><![CDATA[Tomato]]></answer>
+				<answer width="90" height="10" top="47" type="text" fontSize="25" lineHeight="25" offsetTop="-15"><![CDATA[cucumber]]></answer>
+				<answer width="90" height="10" top="58" type="text" fontSize="25" lineHeight="25" offsetTop="-15"><![CDATA[apple]]></answer>
+				<answer width="90" height="10" top="69" type="text" fontSize="25" lineHeight="25" offsetTop="-15"><![CDATA[orange]]></answer>
+				<answer width="90" height="10" top="80" type="text" fontSize="25" lineHeight="25" offsetTop="-15" submit="true"><![CDATA[Done]]></answer>
+			</answers>
+			<inputs/>
+		</portrait>
+	</item></questions>
