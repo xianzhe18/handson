@@ -1,0 +1,54 @@
+.font-helvetica{
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.text-right{
+    text-align: right;
+}
+.text-center{
+    text-align: center;
+}
+.container{
+    padding: 1em 0;
+}
+.ui.form input[type='text']{
+    min-width: 250px;
+}
+.ui.input{
+    width: 100%;
+}
+.ui.search > .results .result .content{
+    padding: 0;
+}
+.ui.search > .results .result .title {
+    border: none;
+}
+.ui.form input.rounded, .ui.form input.rounded:focus {
+    border-radius: 500rem;
+}
+.ui.custom.popup{
+    width: 600px;
+    height: 400px;
+}
+#payee-add-btn{
+    font-size: 2em;
+    vertical-align: bottom;
+    color:#555;
+    cursor: pointer;
+}
+input#amount-input{
+    min-width: 0;
+    width: calc(100% - 75px);
+}
+#file-input{
+    display: none;
+}
+#complex-allocation-panel{
+    display: none;
+}
+#total-value-panel #allocation-confirm-btn{
+    display: none;
+    cursor: pointer;
+}
+#total-value-panel #allocation-confirm-btn:before{
+    vertical-align: -webkit-baseline-middle;
+}

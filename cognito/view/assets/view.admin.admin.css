@@ -1,0 +1,20 @@
+ /*Faux Textbox */
+
+.c-forms-faux-textbox {background:#fff;border:1px solid #ccc;cursor:pointer;padding:5px 22px 5px 5px;position:relative;min-height:25px;white-space:nowrap;font-style:italic;}
+.c-forms-faux-textbox > div {text-overflow:ellipsis;overflow:hidden;font-size:12px;}
+.c-forms-faux-textbox i {color:#e68f1a;margin-right:6px;vertical-align:middle;position:absolute;top: 50%;-webkit-transform: translateY(-50%);transform: translateY(-50%);right:0;}
+
+
+
+
+/* Modal Menu */
+
+.c-forms-modal-menu {display:none;position:absolute;background:#fff;border-color:#ccc;border-style:solid;border-width: 0 1px 1px 1px;left:0;right:0px;z-index:999;font-size:12px;}
+.c-forms-modal-menu-buttons {clear:both;text-align:right;padding:6px;font:bold 13px 'Open Sans Condensed', sans-serif !important}
+.c-forms-modal-menu-button {cursor:pointer;font-weight:700;}
+
+.c-forms-modal-menu .c-forms-check-list label {cursor:pointer;display:block;text-align:center;font: 14px 'Open Sans Condensed', sans-serif;font-weight:700;padding:2px;margin:0 4px 4px 4px;border:1px solid #ccc;border-radius:4px;}
+.c-forms-modal-menu .c-forms-check-list label.c-forms-check-list-checked {background: #95ba14;color:#fff;}
+.c-forms-modal-menu .c-forms-check-list label:hover {background:#aed136;color:#fff;}
+.c-forms-modal-menu .c-forms-check-list label:active {position: relative;top: 1px;}
+.c-forms-modal-menu .c-forms-check-list label input[type=checkbox] {display:none;}

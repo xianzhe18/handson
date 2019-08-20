@@ -1,0 +1,34 @@
+[
+  {
+    "value": "KOW",
+    "name": "KOW"
+  },
+  {
+    "value": "AUD",
+    "name": "AUD"
+  },
+  {
+    "value": "USD",
+    "name": "USD"
+  },
+  {
+    "value": "EUR",
+    "name": "EUR"
+  },
+  {
+    "value": "GBP",
+    "name": "GBP"
+  },
+  {
+    "value": "THB",
+    "name": "THB"
+  },
+  {
+    "value": "TWD",
+    "name": "TWD"
+  },
+  {
+    "value": "SAR",
+    "name": "SAR"
+  }
+]

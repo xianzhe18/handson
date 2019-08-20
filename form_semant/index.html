@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Form</title>
+    <link rel="stylesheet" href="assets/css/lib/semantic.min.css">
+    <link rel="stylesheet" href="assets/css/lib/calendar.min.css">
+    <link rel="stylesheet" href="assets/css/lib/daterangepicker.min.css">
+    <link rel="stylesheet" href="assets/css/app/app.css">
+</head>
+<body>
+<div class="ui container">
+    <div class="ui styled fluid accordion">
+        <div class="active title">
+            <i class="dropdown icon"></i>
+            Whom to Pay
+        </div>
+        <div class="active content">
+            <div class="ui segment">
+                <div class="ui fluid form">
+                    <div class="ui grid">
+                        <div class="four wide column">
+                            <div class="ui search" id="vendor-search">
+                                <div class="ui icon input">
+                                    <input id="vendor-input" class="prompt rounded" type="text" placeholder="Pay whom?">
+                                    <i class="search icon"></i>
+                                </div>
+                                <div class="results"></div>
+                            </div>
+                        </div>
+                        <div class="four wide column">
+                            <button class="ui icon button" id="popup-btn">
+                                <i class="add square icon"></i>
+                            </button>
+                        </div>
+                        <div class="four wide column">
+                            <div class="ui right labeled input">
+                                <div class="ui dropdown label" id="currency-units-dropdown">
+                                    <div class="text currency-unit" id="currency-unit">KOW</div>
+                                    <i class="dropdown icon"></i>
+                                    <div class="menu currency-unit-menu">
+                                        <div class="item">KOW</div>
+                                        <div class="item">AUD</div>
+                                        <div class="item">USD</div>
+                                        <div class="item">EUR</div>
+                                        <div class="item">GBP</div>
+                                        <div class="item">THB</div>
+                                        <div class="item">TWD</div>
+                                        <div class="item">SAR</div>
+                                    </div>
+                                </div>
+                                <input type="text" id="amount-input" />
+                                <div class="ui basic label">.00</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ui grid">
+                        <div class="four wide column">
+                            <input class="rounded" id="invoice-input" type="text" placeholder="Acc#">
+                        </div>
+                        <div class="four wide column"></div>
+                        <div class="four wide column">
+                            <div class="ui calendar date" id="invoice-date" data-content="Invoice Date">
+                                <div class="ui input right icon">
+                                    <i class="calendar icon"></i>
+                                    <input type="text" id="invoice-date-input" placeholder="Invoice Date">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="four wide column"></div>
+                    </div>
+                    <div class="ui grid">
+                        <div class="four wide column">
+                            <input class="rounded" id="invoice-reference-input" type="text" placeholder="Invoice Reference">
+                        </div>
+                        <div class="four wide column"></div>
+                        <div class="four wide column">
+                            <div class="ui calendar date" id="payment-due" data-content="Payment Due">
+                                <div class="ui input right icon">
+                                    <i class="calendar icon"></i>
+                                    <input type="text" id="payment-due-input" placeholder="Payment Due">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="four wide column"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="title">
+            <i class="dropdown icon"></i>
+            How to Allocate
+        </div>
+        <div class="content">
+            <div class="ui segment">
+                <div class="ui fluid form">
+                    <div class="inline fields">
+                        <div class="field">
+                            <div class="ui radio checkbox">
+                                <input type="radio" name="allocation-method" value="influencers" checked="checked">
+                                <label>Influencers</label>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <div class="ui radio checkbox">
+                                <input type="radio" name="allocation-method" value="app-installs">
+                                <label>App Installs</label>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <div class="ui radio checkbox">
+                                <input type="radio" name="allocation-method" value="ppc">
+                                <label>PPC</label>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <div class="ui radio checkbox">
+                                <input type="radio" name="allocation-method" value="other">
+                                <label>Other</label>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <div class="ui radio checkbox">
+                                <input type="radio" name="allocation-method" value="digital-production">
+                                <label>Digital Production</label>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <div class="ui radio checkbox">
+                                <input type="radio" name="allocation-method" value="digital-marketing">
+                                <label>Digital Marketing</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="simple-allocation-panel">
+                        <div class="inline fields">
+                            <div class="ui search market-search">
+                                <div class="ui icon input">
+                                    <input class="prompt rounded" id="market-search-input" type="text" placeholder="Market">
+                                    <i class="search icon"></i>
+                                </div>
+                                <div class="results"></div>
+                            </div>
+                        </div>
+                        <div class="inline fields">
+                            <div class="ui period">
+                                <div class="ui input right icon">
+                                    <i class="calendar icon"></i>
+                                    <input type="text" class="allocation-period-input" placeholder="Allocation Period" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="complex-allocation-panel">
+                    <div class="ui grid allocation-row">
+                        <div class="four wide column">
+                            <div class="ui search market-search">
+                                <div class="ui icon input">
+                                    <input class="prompt rounded complex-market-search-input" type="text" placeholder="Market">
+                                    <i class="search icon"></i>
+                                </div>
+                                <div class="results"></div>
+                            </div>
+                        </div>
+                        <div class="four wide column">
+                            <div class="ui period">
+                                <div class="ui input right icon">
+                                    <i class="calendar icon"></i>
+                                    <input type="text" class="allocation-period-input" placeholder="Allocation Period" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="four wide column">
+                            <div class="ui right labeled input">
+                                <div class="ui dropdown label allocation-currency-units-dropdown">
+                                    <div class="text currency-unit">KOW</div>
+                                    <i class="dropdown icon"></i>
+                                    <div class="menu">
+                                        <div class="item">KOW</div>
+                                        <div class="item">AUD</div>
+                                        <div class="item">USD</div>
+                                        <div class="item">EUR</div>
+                                        <div class="item">GBP</div>
+                                        <div class="item">THB</div>
+                                        <div class="item">TWD</div>
+                                        <div class="item">SAR</div>
+                                    </div>
+                                </div>
+                                <input type="text" class="one-allocation-amount" />
+                                <div class="ui basic label">.00</div>
+                            </div>
+                        </div>
+                        <div class="four wide column text-center">
+                            <div class="ui icon button add-row-btn">
+                                <i class="icon add square"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ui grid" id="total-value-panel">
+                        <div class="eight wide column font-helvetica text-right" style="font-size: 2em;">
+                            <span style="vertical-align: -webkit-baseline-middle;">Total</span>
+                        </div>
+                        <div class="four wide column">
+                            <div class="ui right labeled input">
+                                <div class="ui dropdown label" id="allocation-currency-units-dropdown">
+                                    <div class="text currency-unit" id="allocation-currency-unit">KOW</div>
+                                    <i class="dropdown icon"></i>
+                                    <div class="menu currency-unit-menu">
+                                        <div class="item">KOW</div>
+                                        <div class="item">AUD</div>
+                                        <div class="item">USD</div>
+                                        <div class="item">EUR</div>
+                                        <div class="item">GBP</div>
+                                        <div class="item">THB</div>
+                                        <div class="item">TWD</div>
+                                        <div class="item">SAR</div>
+                                    </div>
+                                </div>
+                                <input type="text" id="total-allocation-amount" readonly/>
+                                <div class="ui basic label">.00</div>
+                            </div>
+                        </div>
+                        <div class="four wide column text-center">
+                            <i class="icon checkmark box green" id="allocation-confirm-btn" style="font-size: 2em;"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="inline fields">
+                    <div class="ui checkbox">
+                        <input type="checkbox" id="simple-allocation-check"/>
+                        <label>I need more complex Allocation options</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="title">
+            <i class="dropdown icon"></i>
+            Advanced Allocations
+        </div>
+        <div class="content">
+            <div class="ui segment">
+                <div class="ui fluid form">
+                    <div class="two fields">
+                        <div class="field">
+                            <label>First Name</label>
+                            <input placeholder="First Name" type="text">
+                        </div>
+                        <div class="field">
+                            <label>Last Name</label>
+                            <input placeholder="Last Name" type="text">
+                        </div>
+                    </div>
+                    <div class="ui accordion field">
+                        <div class="title">
+                            <i class="icon dropdown"></i>
+                            Optional Details
+                        </div>
+                        <div class="content field">
+                            <label class="transition hidden">Maiden Name</label>
+                            <input placeholder="Maiden Name" type="text" class="transition hidden">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="title">
+            <i class="dropdown icon"></i>
+            Upload Invoice
+        </div>
+        <div class="content">
+            <div class="ui form">
+                <div class="field">
+                    <div class="ui green submit button" id="upload-btn">Upload</div>
+                    <input type="file" id="file-input"/>
+                </div>
+                <div class="field">
+                    <textarea rows="3" placeholder="Comments"></textarea>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="ui container">
+    <div class="ui form">
+        <div class="field">
+            <div class="ui checkbox">
+                <input type="checkbox" name="example">
+                <label>I agree to Terms and Conditions</label>
+            </div>
+        </div>
+        <div class="field">
+            <div class="ui secondary submit button" id="submit-btn">Submit</div>
+            <div class="ui secondary submit button" id="preview-btn">Preview</div>
+        </div>
+    </div>
+</div>
+
+
+<div class="ui fluid custom popup left top" style="min-width: 400px;height: 300px;">
+    <div class="ui grid">
+        <div class="eight wide column">
+            <div class="ui form">
+                <div class="field">
+                    <div class="ui input transparent">
+                        <input type="text" id="payee-name" placeholder="Payee Name..."/>
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="ui input transparent">
+                        <input type="text" id="payee-address" placeholder="Payee Address..."/>
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="ui input transparent">
+                        <input type="text" id="payment-details" placeholder="Payment Details..."/>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="eight wide grid"></div>
+    </div>
+    <div style="position: absolute;bottom: 10px;right: 10px;">
+        <i class="checkmark box icon" id="payee-add-btn"></i>
+        <div class="ui selection dropdown" id="payment-profile-dropdown">
+            <input id="payment-profile-input" type="hidden">
+            <div class="default text" id="payment-category">Payment Profile</div>
+            <i class="dropdown icon"></i>
+            <div class="menu">
+                <div class="item" data-value="0">Influencer – PayPal</div>
+                <div class="item" data-value="1">Influencer- Non-PayPal</div>
+                <div class="item" data-value="2">Wire to USA – SWIFT code</div>
+                <div class="item" data-value="3">Wire to Australia – BSB\Account</div>
+                <div class="item" data-value="4">Other</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="assets/js/lib/jquery.min.js"></script>
+<script type="text/javascript" src="assets/js/lib/semantic.min.js"></script>
+<script type="text/javascript" src="assets/js/lib/moment.min.js"></script>
+<script type="text/javascript" src="assets/js/lib/daterangepicker.min.js"></script>
+<script type="text/javascript" src="assets/js/lib/calendar.min.js"></script>
+<script type="text/javascript" src="assets/js/app/app.js"></script>
+</body>
+</html>
