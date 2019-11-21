@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Use cookie to run survey one time in a browser, jQuery Survey Library Example</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link data-require="bootstrap@*" data-semver="4.1.3" rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" />
+<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://surveyjs.azureedge.net/1.0.92/survey.jquery.min.js"></script>
+    <script data-require="bootstrap@*" data-semver="4.1.3" src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+  <link href="https://surveyjs.azureedge.net/1.0.92/survey.css" type="text/css" rel="stylesheet" /> 
+</head>
+
+<body class="main_wrap" style="min-height: 100vh; overflow: scroll;">
+  <div id="red_box" class="red_box" style="position: absolute; display:none; background: rgba(255,0,0,0.4);"></div>
+  <br>
+  <div class="container">
+      <div class="row">
+        <div class="col-md-12"> 
+          <div class="form-group" style="position:relative; display:block;">
+            <input readonly type="text" name="img_name" id="img_name" redonly class="form-control" value="To set coordinates click image.">
+            <button type="button" id="back_btn" class="btn" style="position: absolute; right: 2px; top: 2px; height: 34px; border-radius:0;">Edit</button>
+          </div>
+
+        </div>
+      </div>
+      <!--div class="row">
+        <div class="col-md-12">
+          <div id="background_wrap" style="cursor: pointer; position:relative; display:block;">
+            <img src="" style="border: solid 1px #ccc; position:absolute; display: none; left: 0px; top: 0px; width: 100%;" id="img_file_obj" />
+          </div>
+        </div>
+      </div-->
+  </div>
+
+  <div id="surveyModal" class="modal fade" role="dialog">
+    <div class="modal-dialog modal-lg">
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-body">
+          <div id="surveyContainer"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="./script.js"></script>
+</body>
+
+</html>
