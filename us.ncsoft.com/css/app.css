@@ -17252,15 +17252,14 @@ a.text-dark:focus,a.text-dark:hover {
  * Font Awesome Pro 5.6.3 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license (Commercial License)
  */
- /*
 @font-face {
     font-family: Font Awesome\ 5 Pro;
     font-style: normal;
     font-weight: 300;
-    src: url(http://us.ncsoft.com/fonts/vendor/@fortawesome/fontawesome-pro/webfa-light-300.eot?2626ea387360e0ce32037801ec6baee6);
-    src: url(http://us.ncsoft.com/fonts/vendor/@fortawesome/fontawesome-pro/webfa-light-300.eot?2626ea387360e0ce32037801ec6baee6) format("embedded-opentype"),url(http://us.ncsoft.com/fonts/vendor/@fortawesome/fontawesome-pro/webfa-light-300.woff2?133b6087a9cb7a3d34da6f3a1faddc8b) format("woff2"),url(http://us.ncsoft.com/fonts/vendor/@fortawesome/fontawesome-pro/webfa-light-300.woff?086ab29ed9100a1f6468bdf0e93a346a) format("woff"),url(http://us.ncsoft.com/fonts/vendor/@fortawesome/fontawesome-pro/webfa-light-300.ttf?5708aa3afde9acd9385b455ceed32cab) format("truetype"),url(http://us.ncsoft.com/fonts/vendor/@fortawesome/fontawesome-pro/webfa-light-300.svg?c1dc37c47455c39f0b0443f132a9e443) format("svg")
+    src: url(./fonts/fontawesome-webfont.eot);
+    src: url(./fonts/fontawesome-webfont.eot) format("embedded-opentype"),url(./fonts/fontawesome-webfont.woff2) format("woff2"),url(./fonts/fontawesome-webfont.woff) format("woff"),url(./fonts/fontawesome-webfont.ttf) format("truetype"),url(./fonts/fontawesome-webfont.svg) format("svg")
 }
-*/
+
 .fal {
     font-family: Font Awesome\ 5 Pro;
     font-weight: 300
