@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Homepage</title>
+    <meta name="description" content="description">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1.0">
+    <!-- Icons -->
+    <!-- The following icons can be replaced with your own, they are used
+    by desktop and mobile browsers -->
+    <link rel="shortcut icon" href="assets/img/favicons/favicon.png">
+    <link rel="icon" type="image/png" href="assets/img/favicons/favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="assets/img/favicons/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="assets/img/favicons/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="assets/img/favicons/favicon-160x160.png" sizes="160x160">
+    <link rel="icon" type="image/png" href="assets/img/favicons/favicon-192x192.png" sizes="192x192">
+    <link rel="apple-touch-icon" sizes="57x57" href="assets/img/favicons/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="assets/img/favicons/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/img/favicons/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/img/favicons/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/img/favicons/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="assets/img/favicons/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="assets/img/favicons/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/img/favicons/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicons/apple-touch-icon-180x180.png">
+    <!-- END Icons -->
+    <!-- Stylesheets -->
+    <!-- Web fonts -->
+    <!--<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400italic,600,700%7COpen+Sans:300,400,400italic,600,700">-->
+    <!-- Bootstrap CSS framework -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- You can include a specific file from css/themes/ folder to alter
+    the default color theme of the template. eg: -->
+    <link rel="stylesheet" id="css-main" href="assets/css/app.css">
+    <link rel="stylesheet" href="assets/js/plugins/slick/slick.min.css">
+    <link rel="stylesheet" href="assets/js/plugins/slick/slick-theme.min.css">
+    <!-- <link rel="stylesheet" id="css-theme" href="assets/css/themes/flat.min.css"> -->
+    <!-- END Stylesheets -->
+</head>
+<body>
+<!-- Page Container -->
+
+<div id="page-container" class="side-scroll header-navbar-fixed header-navbar-transparent">
+    <!-- Header -->
+    <header id="header-navbar" class="border-b content-mini content-push">
+        <div class="content-boxed">
+            <!-- Header Navigation Right -->
+            <ul class="nav-header pull-right">
+                <li>
+                    <div class="btn-group">
+                        <button class="btn btn-link text-white" type="button">
+                            <i class="si si-magnifier"></i>
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-right sidebar-mini-hide font-s13">
+                            <li class="active">
+                                <a data-toggle="theme" data-theme="default" tabindex="-1" href="javascript:void(0)">
+                                    <i class="fa fa-circle text-default pull-right"></i> <span class="font-w600">Default</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a data-toggle="theme" data-theme="assets/css/themes/amethyst.min.css" tabindex="-1" href="javascript:void(0)">
+                                    <i class="fa fa-circle text-amethyst pull-right"></i> <span class="font-w600">Amethyst</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a data-toggle="theme" data-theme="assets/css/themes/city.min.css" tabindex="-1" href="javascript:void(0)">
+                                    <i class="fa fa-circle text-city pull-right"></i> <span class="font-w600">City</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a data-toggle="theme" data-theme="assets/css/themes/flat.min.css" tabindex="-1" href="javascript:void(0)">
+                                    <i class="fa fa-circle text-flat pull-right"></i> <span class="font-w600">Flat</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a data-toggle="theme" data-theme="assets/css/themes/modern.min.css" tabindex="-1" href="javascript:void(0)">
+                                    <i class="fa fa-circle text-modern pull-right"></i> <span class="font-w600">Modern</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a data-toggle="theme" data-theme="assets/css/themes/smooth.min.css" tabindex="-1" href="javascript:void(0)">
+                                    <i class="fa fa-circle text-smooth pull-right"></i> <span class="font-w600">Smooth</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="hidden-md hidden-lg">
+                    <!-- Toggle class helper (for main header navigation below in small screens), functionality initialized in App() -> uiToggleClass() -->
+                    <button class="btn btn-link text-white pull-right" data-toggle="class-toggle" data-target=".js-nav-main-header" data-class="nav-main-header-o" type="button">
+                        <i class="fa fa-navicon"></i>
+                    </button>
+                </li>
+            </ul>
+            <!-- END Header Navigation Right -->
+
+            <!-- Main Header Navigation -->
+            <ul class="js-nav-main-header nav-main-header pull-right">
+                <li class="text-right hidden-md hidden-lg">
+                    <!-- Toggle class helper (for main header navigation in small screens), functionality initialized in App() -> uiToggleClass() -->
+                    <button class="btn btn-link text-white" data-toggle="class-toggle" data-target=".js-nav-main-header" data-class="nav-main-header-o" type="button">
+                        <i class="fa fa-times"></i>
+                    </button>
+                </li>
+                <li>
+                    <a class="active" href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="index.html">About</a>
+                </li>
+                <li>
+                    <a href="index.html">Investors</a>
+                </li>
+                <li>
+                    <a href="index.html">Product & Technology</a>
+                </li>
+                <li>
+                    <a href="index.html">News & Events</a>
+                </li>
+                <li>
+                    <a href="index.html">Medical Content for HCP</a>
+                </li>
+                <li>
+                    <a href="index.html">Careers</a>
+                </li>
+            </ul>
+            <!-- END Main Header Navigation -->
+
+            <!-- Header Navigation Left -->
+            <ul class="nav-header pull-left">
+                <li class="header-content">
+                    <a class="h5" href="/">
+                        <img src="assets/img/logo.png" alt="Logo"/>
+                    </a>
+                </li>
+            </ul>
+            <!-- END Header Navigation Left -->
+        </div>
+    </header>
+    <!-- END Header -->
+    <!-- Main Container -->
+    <main id="main-container">
+        <!-- Content -->
+        <div class="bg-image" style="background-image: url('assets/img/background/home1.jpg');">
+            <section class="content content-full content-boxed overflow-hidden">
+                <!-- Section Content -->
+                <div class="push-200-t push-50 row">
+                    <div class="col col-md-offset-7 col-md-4 col-xs-12">
+                        <h1 class="h1 text-white text-uppercase push-10 visibility-hidden" data-toggle="appear" data-class="animated fadeInDown">LOREM IPSUM DURABILITY</h1>
+                        <h2 class="h5 text-white-op push-50 visibility-hidden" data-toggle="appear" data-class="animated fadeInDown" style="line-height: 1.5;">Admedus is a structural heart company delivering clinically superior solutions that help healthcare professionals create life-changing outcomes for patients. Its focus is on investing in and developing next generation technologies with world class partners and acquiring strategic assets to grow product and service offerings. The company has assets from research & development through clinical development and sales, marketing and distribution.</h2>
+                    </div>
+                    <div class="row visibility-hidden" data-toggle="appear" data-class="animated fadeInUp">
+                        <div class="col-sm-12 text-right text-white">
+                            <a href="javascript:;" class="text-white" data-toggle="scroll-to" data-target="#investor-information"><i class="fa fa-stack fa-3x fa-angle-double-down"></i> <span>Scroll Down</span></a>
+                        </div>
+                    </div>
+                </div>
+                <div id="investor-information" class="row items-push-3x push-150-t nice-copy">
+                    <div class="col-xs-12">
+                        <h4 class="h6 text-white-op push-15 push-10-t">Recent Topics</h4>
+                        <h1 class="h1 text-white">Investor Information</h1>
+                    </div>
+                </div>
+                <!-- END Section Content -->
+            </section>
+        </div>
+        <!-- END Classic Features #1 -->
+        <div class="container-fluid h-100 border-white-op-b">
+            <div class="row d-flex">
+                <div class="col-md-3 col-sm-6 no-padding">
+                    <div class="img-container">
+                        <img class="img-responsive" src="assets/img/background/Mask%20Group%201.png" alt="">
+                    </div>
+                    <div class="content content-full bg-black-op">
+                        <h6 class="h6 text-warning font-w600 push-10">ASX Announcements</h6>
+                        <h3 class="h4 text-white font-w600 push-30">Finalisation of License with 4C Medical</h3>
+                        <p class="text-white font-w600 push-15" style="position: absolute; bottom: 0;">3 February 2020</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 no-padding">
+                    <div class="img-container">
+                        <img class="img-responsive" src="assets/img/background/Mask%20Group%202.png" alt="">
+                    </div>
+                    <div class="content content-full bg-gray-darker">
+                        <h6 class="h6 text-warning font-w600 push-10">Investor Presentations</h6>
+                        <h3 class="h4 text-white font-w600 push-30">Admedus CEO in New York to update on recent key milestones</h3>
+                        <p class="text-white font-w600 push-15" style="position: absolute; bottom: 0;">2 February 2020</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 no-padding">
+                    <div class="img-container">
+                        <img class="img-responsive" src="assets/img/background/Mask%20Group%204.png" alt="">
+                    </div>
+                    <div class="content content-full bg-black-op">
+                        <h6 class="h6 text-warning font-w600 push-10">ASX Announcements</h6>
+                        <h3 class="h4 text-white font-w600 push-30">Appendix 4C - quarterly</h3>
+                        <p class="text-white font-w600 push-15" style="position: absolute; bottom: 0;">31 January 2020</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 no-padding">
+                    <div class="img-container">
+                        <img class="img-responsive" src="assets/img/background/Mask%20Group%205.png" alt="">
+                    </div>
+                    <div class="content content-full bg-gray-darker">
+                        <h6 class="h6 text-warning font-w600 push-10">Investor Presentations</h6>
+                        <h3 class="h4 text-white font-w600 push-30">Annual General Meeting 2019 (Jan-Dec)</h3>
+                        <p class="text-white font-w600 push-15" style="position: absolute; bottom: 0;">15 January 2020</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="position: relative;">
+            <div class="js-slider" data-slider-dots="true" data-slider-autoplay="true" data-slider-autoplay-speed="3000">
+                <div>
+                    <img class="img-responsive" src="assets/img/background/slider-image-1.png" alt="">
+                </div>
+                <div>
+                    <img class="img-responsive" src="assets/img/background/slider-image-1.png" alt="">
+                </div>
+                <div>
+                    <img class="img-responsive" src="assets/img/background/slider-image-1.png" alt="">
+                </div>
+            </div>
+            <div style="position:absolute;top:0;left:0;right:0;">
+                <div class="push-100-t push-50 row">
+                    <div class="col col-md-offset-3 col-md-5 col-xs-12">
+                        <h6 class="h6 text-info push-20">Product & Technology</h6>
+                        <h1 class="h1 text-white text-capitalize push-10 font-w600">Better Science</h1>
+                        <h2 class="h2 text-white text-capitalize push-20">Better Design</h2>
+                        <a href="javascript:;" class="btn btn-danger btn-noborder btn-lg font-w100" style="background-color:rgb(169,43,43);">Find Out More  <i class="fa fa-long-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row d-flex">
+            <div class="col col-md-4 no-padding">
+                <div class="img-container" style="height: 100%;">
+                    <img class="img-responsive" src="assets/img/background/information-1.png" alt="" style="height: 100%;">
+                    <div class="img-options" style="opacity:1;background-color:rgba(0,0,0,0.3);">
+                        <div class="img-options-content">
+                            <section class="content content-full content-boxed overflow-hidden row">
+                                <div class="col col-xs-offset-2 col-xs-8">
+                                    <h1 class="h1 text-white push-20">Healthcare Professionals</h1>
+                                    <a class="text-white-op" href="javascript:void(0)"><i class="si si-arrow-right fa-3x"></i></a>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col col-md-4 no-padding">
+                <div class="img-container" style="height: 100%;">
+                    <img class="img-responsive" src="assets/img/background/information-2.png" alt="" style="height: 100%;">
+                    <div class="img-options" style="opacity:1;background-color:rgba(0,0,0,0.3);">
+                        <div class="img-options-content">
+                            <section class="content content-full content-boxed overflow-hidden row">
+                                <div class="col col-xs-offset-2 col-xs-8">
+                                    <h1 class="h1 text-white push-20">Product Information</h1>
+                                    <a class="text-white-op" href="javascript:void(0)"><i class="si si-arrow-right fa-3x"></i></a>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col col-md-4 no-padding">
+                <div class="img-container" style="height: 100%;">
+                    <img class="img-responsive" src="assets/img/background/information-3.png" alt="" style="height: 100%;">
+                    <div class="img-options" style="opacity:1;background-color:rgba(0,0,0,0.3);">
+                        <div class="img-options-content">
+                            <section class="content content-full content-boxed overflow-hidden row">
+                                <div class="col col-xs-offset-2 col-xs-8">
+                                    <h1 class="h1 text-white push-20">Investor Center</h1>
+                                    <a class="text-white-op" href="javascript:void(0)"><i class="si si-arrow-right fa-3x"></i></a>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- News & Events -->
+        <div class="bg-image" style="background-image: url('assets/img/background/grid-1.png');padding-bottom:1px;">
+            <!-- Section Content -->
+            <section class="content content-full content-boxed overflow-hidden">
+                <div class="row push-20 push-20-t nice-copy">
+                    <div class="col-xs-12">
+                        <h4 class="h6 push-15 push-10-t font-w600" style="color:rgb(225, 57, 57)">Latest News</h4>
+                        <h1 class="h1 font-w600" style="color:rgb(0,44,93)">News & Events</h1>
+                    </div>
+                </div>
+            </section>
+            <!-- END Section Content -->
+            <div class="container">
+                <div class="row push-100">
+                    <div class="col col-sm-6">
+                        <div class="img-container">
+                            <img class="img-responsive" src="assets/img/background/news-1.png" alt=""/>
+                        </div>
+                    </div>
+                    <div class="col col-sm-6">
+                        <div class="img-container">
+                            <img class="img-responsive" src="assets/img/background/news-2.png" alt=""/>
+                        </div>
+                    </div>
+                </div>
+                <div class="row push-100">
+                    <div class="col col-sm-6">
+                        <div class="img-container">
+                            <img class="img-responsive" src="assets/img/background/news-3.png" alt=""/>
+                        </div>
+                    </div>
+                    <div class="col col-sm-6">
+                        <div class="img-container">
+                            <img class="img-responsive" src="assets/img/background/news-4.png" alt=""/>
+                        </div>
+                    </div>
+                </div>
+                <div class="row push-100">
+                    <div class="col col-sm-6">
+                        <div class="img-container">
+                            <img class="img-responsive" src="assets/img/background/news-5.png" alt=""/>
+                        </div>
+                    </div>
+                    <div class="col col-sm-6">
+                        <div class="img-container">
+                            <img class="img-responsive" src="assets/img/background/news-6.png" alt=""/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center push-100">
+                <button class="btn btn-noborder btn-lg btn-danger" style="background-color:rgb(169,43,43);font-weight:100;min-width: 200px;">See All News <i class="fa fa-long-arrow-right"></i></button>
+            </div>
+        </div>
+        <!-- END News & Events -->
+        <!-- Get Started -->
+        <div class="bg-image" style="background-image:url('assets/img/background/globe.png')">
+            <div class="container">
+                <section class="content content-full content-boxed">
+                    <!-- Section Content -->
+                    <div class="row">
+                        <div class="col col-md-8 push-20-t push-20">
+                            <h3 class="h4 push-20 text-white">Subscribe Our Newsletter</h3>
+                        </div>
+                        <div class="col col-md-4">
+                            <form>
+                                <div class="form-group">
+                                    <div class="col-md-12">
+                                        <div class="bg-white-op" style="border-radius:20px;display:flex">
+                                            <button class="btn btn-rounded text-white" type="button" style="background: none;"><i class="fa fa-user"></i></button>
+                                            <input class="form-control no-border" type="text" id="example-input1-group2" name="example-input1-group2" placeholder="Email Address" style="background:none;">
+                                            <button class="btn btn-rounded btn-warning" type="button"><i class="fa fa-paper-plane"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <!-- END Section Content -->
+                </section>
+            </div>
+        </div>
+        <!-- END Get Started -->
+    </main>
+    <!-- END Main Container -->
+    <!-- Footer -->
+    <footer id="page-footer" class="bg-black-op">
+        <div class="container">
+            <!-- Footer Navigation -->
+            <div class="row">
+                <div class="col-sm-4 text-center" style="padding-top:50px;">
+                    <div class="push-50 push-50-t">
+                        <img src="assets/img/logo.png" alt=""/>
+                    </div>
+                    <div class="">
+                        <img class="" src="assets/img/buttons/facebook.png" alt=""/>
+                        <img class="push-10-l" src="assets/img/buttons/twitter.png" alt=""/>
+                        <img class="push-10-l" src="assets/img/buttons/linkedin.png" alt=""/>
+                    </div>
+                </div>
+                <div class="col-sm-4 border-white-op-l border-white-op-r" style="padding:50px;">
+                    <h5 class="h5 push-10 text-white">Australia</h5>
+                    <h6 class="h6 push-10 text-white-op">Toowong Tower Level 3, 9 Sherwood Rd</h6>
+                    <h6 class="h6 push-10 text-white-op">TooWong QLD 4066</h6>
+                    <h6 class="h6 push-10 text-white-op">PO Box 1159, Milton 4064</h6>
+                    <h6 class="h6 push-20 text-white-op">T 1300 550 310</h6>
+                    <h5 class="h5 push-10 text-white">USA</h5>
+                    <h6 class="h6 push-10 text-white-op">860 Blue Gentian Road, Suite 340</h6>
+                    <h6 class="h6 push-10 text-white-op">Eagan MN 55121 United States</h6>
+                    <h6 class="h6 push-20 text-white-op">T +1 651 493 0606</h6>
+                    <h5 class="h5 push-50 text-white">Email: <a class="text-white" href="javascript:;">Click here to contact us</a> </h5>
+                    <h5 class="h5 push-20 text-white text-center">&copy; 2020 Admedus</h5>
+                </div>
+                <div class="col-sm-4" style="padding:50px;">
+                    <ul class="list list-simple-mini font-s13">
+                        <li>
+                            <a class="font-w600 text-white" href="/">Home</a>
+                        </li>
+                        <li>
+                            <a class="font-w600 text-white" href="javascript:void(0)">About</a>
+                        </li>
+                        <li>
+                            <a class="font-w600 text-white" href="javascript:void(0)">Investors</a>
+                        </li>
+                        <li>
+                            <a class="font-w600 text-white" href="javascript:void(0)">Product &amp; Technology</a>
+                        </li>
+                        <li>
+                            <a class="font-w600 text-white" href="javascript:void(0)">News &amp; Events</a>
+                        </li>
+                        <li>
+                            <a class="font-w600 text-white" href="javascript:void(0)">Medical Content for HCP</a>
+                        </li>
+                        <li>
+                            <a class="font-w600 text-white" href="javascript:void(0)">Careers</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- END Footer Navigation -->
+        </div>
+    </footer>
+    <!-- END Footer -->
+</div>
+<!-- END Page Container -->
+<!-- OneUI Core JS: jQuery, Bootstrap, slimScroll, scrollLock, Appear,
+CountTo, Placeholder, Cookie and App.js -->
+<script src="assets/js/core/jquery.min.js"></script>
+<script src="assets/js/core/bootstrap.min.js"></script>
+<script src="assets/js/core/jquery.slimscroll.min.js"></script>
+<script src="assets/js/core/jquery.scrollLock.min.js"></script>
+<script src="assets/js/core/jquery.appear.min.js"></script>
+<script src="assets/js/core/jquery.countTo.min.js"></script>
+<script src="assets/js/core/jquery.placeholder.min.js"></script>
+<script src="assets/js/core/js.cookie.min.js"></script>
+<script src="assets/js/app.js"></script>
+<!-- Page JS Code -->
+<script src="assets/js/plugins/slick/slick.min.js"></script>
+<script>
+    $(function () {
+        // Init page helpers (Appear + CountTo plugins)
+        App.initHelpers(['appear', 'appear-countTo']);
+        App.initHelpers('slick');
+    });
+</script>
+
+
+</body></html>
