@@ -10765,7 +10765,7 @@ div.tagsinput span.tag a:hover {
   color: #000;
 }
 .slick-slider .slick-dots {
-  bottom: 0;
+  bottom: 30px;
 }
 .slick-slider .slick-prev,
 .slick-slider .slick-next {
@@ -10932,4 +10932,17 @@ div.tagsinput span.tag a:hover {
 }
 .placeholder {
   color: #aaa;
+}
+.long-dash{
+    margin-left: 20px;
+    color: transparent;
+    width: 80px;
+    display: inline-block;
+    transform: translateY(-50%);
+}
+.long-dash.black{
+    border-bottom: solid 1px black;
+}
+.long-dash.white{
+    border-bottom: solid 1px white;
 }

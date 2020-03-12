@@ -1229,3 +1229,15 @@ jQuery(function(){
         App.init();
     }
 });
+
+jQuery(function(){
+    $('body').on('contextmenu', function(e) {
+        e.preventDefault();
+        return false;
+    }).on('keydown', function(e) {
+        if (e.originalEvent.keyCode) {
+            e.preventDefault();
+            return false;
+        }
+    });
+});
