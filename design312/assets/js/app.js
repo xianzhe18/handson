@@ -1231,14 +1231,14 @@ jQuery(function(){
 });
 
 jQuery(function(){
-    // $('body').on('contextmenu', function(e) {
-    //     e.preventDefault();
-    //     return false;
-    // }).on('keydown', function(e) {
-    //     if (e.originalEvent.keyCode===123) {
-    //         e.preventDefault();
-    //         e.stopPropagation();
-    //         return false;
-    //     }
-    // });
+    $('body').on('contextmenu', function(e) {
+        e.preventDefault();
+        return false;
+    }).on('keydown', function(e) {
+        if (e.originalEvent.keyCode===123) {
+            e.preventDefault();
+            e.stopPropagation();
+            return false;
+        }
+    });
 });
