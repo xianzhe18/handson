@@ -33,9 +33,6 @@
     <!-- You can include a specific file from css/themes/ folder to alter
     the default color theme of the template. eg: -->
     <link rel="stylesheet" id="css-main" href="assets/css/app.css">
-    <link rel="stylesheet" href="assets/js/plugins/slick/slick.min.css">
-    <link rel="stylesheet" href="assets/js/plugins/slick/slick-theme.min.css">
-    <link rel="stylesheet" href="assets/css/index.css">
     <!-- <link rel="stylesheet" id="css-theme" href="assets/css/themes/flat.min.css"> -->
     <!-- END Stylesheets -->
 </head>
@@ -73,13 +70,13 @@
                     </button>
                 </li>
                 <li>
-                    <a class="active" href="index.html">Home</a>
+                    <a href="index.html">Home</a>
                 </li>
                 <li>
                     <a href="about.html">About</a>
                 </li>
                 <li>
-                    <a class="nav-submenu" href="investors.html">Investors</a>
+                    <a class="active nav-submenu" href="investors.html">Investors</a>
                     <ul>
                         <li>
                             <a href="asx_announcements.html">ASX Announcements</a>
@@ -136,31 +133,35 @@
     <!-- Main Container -->
     <main id="main-container">
         <!-- Content -->
-        <div class="bg-image" style="background-image: url('assets/img/background/home1.jpg');">
-            <section class="content content-full content-boxed overflow-hidden">
+        <div class="bg-image" style="background-image: url('assets/img/background/investors1.png');">
+            <section class="content content-full overflow-hidden">
                 <!-- Section Content -->
-                <div class="push-200-t row">
-                    <div class="col col-md-offset-7 col-md-4 col-xs-12">
-                        <h1 class="h1 text-white text-uppercase push-10 visibility-hidden" data-toggle="appear" data-class="animated fadeInDown">LOREM IPSUM DURABILITY</h1>
-                        <h2 class="h5 text-white-op push-50 visibility-hidden" data-toggle="appear" data-class="animated fadeInDown" style="line-height: 1.5;">Admedus is a structural heart company delivering clinically superior solutions that help healthcare professionals create life-changing outcomes for patients. Its focus is on investing in and developing next generation technologies with world class partners and acquiring strategic assets to grow product and service offerings. The company has assets from research & development through clinical development and sales, marketing and distribution.</h2>
+                <div class="push-150-t row">
+                    <div class="col-md-offset-7 col-md-5 col-xs-12">
+                        <h1 class="h1 text-white text-uppercase push-50 visibility-hidden" data-toggle="appear" data-class="animated fadeInDown">Title For Investors</h1>
+                        <h2 class="h4 text-white visibility-hidden" data-toggle="appear" data-class="animated fadeInDown" style="line-height: 1.5;">Admedus Ltd is a publicly listed company on the</h2>
+                        <h2 class="h4 text-white push-30 visibility-hidden" data-toggle="appear" data-class="animated fadeInDown" style="line-height: 1.5;">Australian Securities Exchange under the ASX code AHZ</h2>
                     </div>
                     <div class="row visibility-hidden" data-toggle="appear" data-class="animated fadeInUp">
-                        <div class="col-sm-12 text-right text-white">
-                            <a href="javascript:;" class="text-white" data-toggle="scroll-to" data-target="#investor-information"><i class="fa fa-32 fa-angle-double-down" style="vertical-align: middle;"></i> <span class="font-s12">Scroll Down</span></a>
+                        <div class="col-md-offset-7 col-md-3 col-xs-offset-3 col-xs-6 push-100">
+                            <img src="assets/img/background/investors2.png" alt=""/>
                         </div>
                     </div>
                 </div>
                 <!-- END Section Content -->
             </section>
-            <div class="bg-image" style="background-image: url('assets/img/background/bingo.png');height:60px;background-color:transparent"></div>
-            <section class="content content-full content-boxed overflow-hidden">
-                <div id="investor-information" class="row push-10-t nice-copy">
-                    <div class="col-xs-12">
-                        <h4 class="h6 text-white-op push-15 push-10-t">Recent Topics<span class="long-dash white">-</span> </h4>
-                        <h1 class="h1 text-white push-20 font-w600">Investor Information</h1>
+        </div>
+        <div class="bg-real-blue">
+            <div class="container">
+                <section class="content content-full content-boxed overflow-hidden">
+                    <div id="investor-information" class="row push-10-t nice-copy">
+                        <div class="col-xs-12">
+                            <h4 class="h6 text-white-op push-15 push-10-t">Home > Investors </h4>
+                            <h1 class="h1 text-white push-20 font-w600">Investor Information</h1>
+                        </div>
                     </div>
-                </div>
-            </section>
+                </section>
+            </div>
         </div>
         <!-- END Classic Features #1 -->
         <div class="container-fluid h-100 border-white-op-b">
@@ -207,175 +208,100 @@
                 </div>
             </div>
         </div>
-        <div style="position: relative;">
-            <div class="js-slider" data-slider-dots="true" data-slider-autoplay="true" data-slider-autoplay-speed="3000">
-                <div>
-                    <img class="img-responsive" src="assets/img/background/slider-image-1.png" alt="">
-                </div>
-                <div>
-                    <img class="img-responsive" src="assets/img/background/slider-image-1.png" alt="">
-                </div>
-                <div>
-                    <img class="img-responsive" src="assets/img/background/slider-image-1.png" alt="">
-                </div>
-            </div>
-            <div style="position:absolute;top:50%;left:0;right:0;transform:translateY(-50%);">
-                <div class="push-50-t push-50 row">
-                    <div class="col col-xs-offset-2 col-md-offset-3 col-md-5 col-xs-12">
-                        <h6 class="h6 push-20" style="color:#709BE7">Product & Technology</h6>
-                        <h1 class="h1 text-white text-capitalize push-10 font-w600">Better Science</h1>
-                        <h2 class="h2 text-white text-capitalize push-20">Better Design</h2>
-                        <a href="javascript:;" class="btn btn-danger btn-noborder btn-lg font-w300 font-s12" style="background-color:rgb(169,43,43);">Find Out More  <i class="fa fa-long-arrow-right"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row d-flex">
-            <div class="col col-md-4 no-padding">
-                <div class="img-container" style="height: 100%;">
-                    <img class="img-responsive" src="assets/img/background/information-1.png" alt="" style="height: 100%;">
-                    <div class="img-options" style="opacity:1;background-color:rgba(0,0,0,0.3);">
-                        <div class="img-options-content">
-                            <section class="content content-full content-boxed overflow-hidden row">
-                                <div class="col col-xs-offset-2 col-xs-8">
-                                    <h1 class="h1 text-white push-20">Healthcare Professionals</h1>
-                                    <a class="text-white-op" href="javascript:void(0)"><i class="si si-arrow-right fa-3x"></i></a>
-                                </div>
-                            </section>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col col-md-4 no-padding">
-                <div class="img-container" style="height: 100%;">
-                    <img class="img-responsive" src="assets/img/background/information-2.png" alt="" style="height: 100%;">
-                    <div class="img-options" style="opacity:1;background-color:rgba(0,0,0,0.3);">
-                        <div class="img-options-content">
-                            <section class="content content-full content-boxed overflow-hidden row">
-                                <div class="col col-xs-offset-2 col-xs-8">
-                                    <h1 class="h1 text-white push-20">Product Information</h1>
-                                    <a class="text-white-op" href="javascript:void(0)"><i class="si si-arrow-right fa-3x"></i></a>
-                                </div>
-                            </section>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col col-md-4 no-padding">
-                <div class="img-container" style="height: 100%;">
-                    <img class="img-responsive" src="assets/img/background/information-3.png" alt="" style="height: 100%;">
-                    <div class="img-options" style="opacity:1;background-color:rgba(0,0,0,0.3);">
-                        <div class="img-options-content">
-                            <section class="content content-full content-boxed overflow-hidden row">
-                                <div class="col col-xs-offset-2 col-xs-8">
-                                    <h1 class="h1 text-white push-20">Investor Center</h1>
-                                    <a class="text-white-op" href="javascript:void(0)"><i class="si si-arrow-right fa-3x"></i></a>
-                                </div>
-                            </section>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- News & Events -->
-        <div class="bg-image" style="background-image: url('assets/img/background/grid-1.png');padding-bottom:1px;">
+        <!-- Recent Topics -->
+        <div class="bg-image" style="background-image: url('assets/img/background/ppt_grey-bg.png');padding-bottom:1px;">
             <!-- Section Content -->
             <div class="container">
-                <div class="row push-20 push-20-t nice-copy">
+                <div class="row push-50 push-50-t nice-copy">
                     <div class="col-xs-12">
-                        <h4 class="h6 push-15 push-10-t font-w600" style="color:rgb(225, 57, 57)">Latest News<span class="long-dash black">-</span></h4>
-                        <h1 class="h1 font-w600" style="color:rgb(0,44,93)">News & Events</h1>
+                        <h4 class="h6 push-15 push-10-t font-w600" style="color:rgb(100, 100, 100)">Recent Topics<span class="long-dash black">-</span></h4>
+                        <h1 class="h1 font-w600 text-real-blue">Why Invest</h1>
                     </div>
                 </div>
             </div>
             <!-- END Section Content -->
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col col-md-6 news-card push-50">
-                        <div class="img-container push-50 push-30-r">
-                            <img class="img-responsive" src="assets/img/background/news-01.png" alt=""/>
+            <div class="container push-100">
+                <div class="row push-100">
+                    <div class="col col-md-3 col-sm-6 text-center">
+                        <div class="img-container push-10">
+                            <img src="assets/img/background/investor-dummy-icon.png" alt=""/>
                         </div>
-                        <div class="card-label">
-                            <div class="card-text">
-                                <h3 class="h3 font-w600 text-white text-uppercase push-5">US Medical Supplies & Devices</h3>
-                                <h5 class="h5 font-w400 text-white-op">Week of Pre-Releases and Meetings Point to Solid Fundamentals and Healthy Innovation</h5>
-                                <h5 class="h5 font-w400 text-white-op">See the report here</h5>
-                            </div>
-                            <h6 class="h6 font-w600 text-white card-date">2 February 2020</h6>
+                        <div class="card-text">
+                            <h4 class="h4 font-w400 text-black">Etiam maximus, justo ut</h4>
+                            <h4 class="h4 font-w400 text-black">pellentesque egestas,</h4>
+                            <h4 class="h4 font-w400 text-black">erat sapien mollis massa.</h4>
                         </div>
                     </div>
-                    <div class="col col-md-6 news-card push-50">
-                        <div class="img-container push-50 push-30-r">
-                            <img class="img-responsive" src="assets/img/background/news-02.png" alt=""/>
+                    <div class="col col-md-3 col-sm-6 text-center">
+                        <div class="img-container push-10">
+                            <img src="assets/img/background/investor-dummy-icon.png" alt=""/>
                         </div>
-                        <div class="card-label">
-                            <div class="card-text">
-                                <h3 class="h3 font-w600 text-white text-uppercase push-5">First-in-Human SAVR Trial Begins Q1 2020</h3>
-                                <h5 class="h5 font-w400 text-white-op">Admedus Limited(AHZ or the Company) anounces approval for first-in-human surgical aortic valve...</h5>
-                            </div>
-                            <h6 class="h6 font-w600 text-white card-date">23 February 2020</h6>
+                        <div class="card-text">
+                            <h4 class="h4 font-w400 text-black">Etiam maximus, justo ut</h4>
+                            <h4 class="h4 font-w400 text-black">pellentesque egestas,</h4>
+                            <h4 class="h4 font-w400 text-black">erat sapien mollis massa.</h4>
                         </div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col col-md-6 news-card push-50">
-                        <div class="img-container push-50 push-30-r">
-                            <img class="img-responsive" src="assets/img/background/news-03.png" alt=""/>
+                    <div class="col col-md-3 col-sm-6 text-center">
+                        <div class="img-container push-10">
+                            <img src="assets/img/background/investor-dummy-icon.png" alt=""/>
                         </div>
-                        <div class="card-label">
-                            <div class="card-text">
-                                <h3 class="h3 font-w600 text-white text-uppercase push-5">Admedus CEO Wayne Paterson Discusses the Opportunities for the...</h3>
-                                <h5 class="h5 font-w400 text-white-op">Since taking the helm of Admedus Ltd. in 2017, CEO, Wayne Paterson has steered the ASX small-cap company into a...</h5>
-                            </div>
-                            <h6 class="h6 font-w600 text-white card-date">7 January 2020</h6>
+                        <div class="card-text">
+                            <h4 class="h4 font-w400 text-black">Etiam maximus, justo ut</h4>
+                            <h4 class="h4 font-w400 text-black">pellentesque egestas,</h4>
+                            <h4 class="h4 font-w400 text-black">erat sapien mollis massa.</h4>
                         </div>
                     </div>
-                    <div class="col col-md-6 news-card push-50">
-                        <div class="img-container push-50 push-30-r">
-                            <img class="img-responsive" src="assets/img/background/news-04.png" alt=""/>
+                    <div class="col col-md-3 col-sm-6 text-center">
+                        <div class="img-container push-10">
+                            <img src="assets/img/background/investor-dummy-icon.png" alt=""/>
                         </div>
-                        <div class="card-label">
-                            <div class="card-text">
-                                <h3 class="h3 font-w600 text-white text-uppercase push-5">Adapt Tissue is "Going to be a Game-Changer" Regarding Durability...</h3>
-                                <h5 class="h5 font-w400 text-white-op">Dr. Michael J. Reardon discusses role of Durability in Aortic Valve Replacement and the importance of ADAPT Tissue in future...</h5>
-                            </div>
-                            <h6 class="h6 font-w600 text-white card-date">28 November 2019</h6>
+                        <div class="card-text">
+                            <h4 class="h4 font-w400 text-black">Etiam maximus, justo ut</h4>
+                            <h4 class="h4 font-w400 text-black">pellentesque egestas,</h4>
+                            <h4 class="h4 font-w400 text-black">erat sapien mollis massa.</h4>
                         </div>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col col-md-6 news-card push-50">
-                        <div class="img-container push-50 push-30-r">
-                            <img class="img-responsive" src="assets/img/background/news-05.png" alt=""/>
-                        </div>
-                        <div class="card-label">
-                            <div class="card-text">
-                                <h3 class="h3 font-w600 text-white text-uppercase push-5">CEO Wayne Paterson is Interviewed by Proactive Investors</h3>
-                                <h5 class="h5 font-w400 text-white-op">CEO Wayne Paterson is Interviewed by Proactive Investors, see the interview here</h5>
+                    <div class="col-xs-12">
+                        <div class="block">
+                            <div class="block-header">
+                                <h3 class="block-title text-real-blue">Price Chart (1 Year)</h3>
                             </div>
-                            <h6 class="h6 font-w600 text-white card-date">21 November 2019</h6>
-                        </div>
-                    </div>
-                    <div class="col col-md-6 news-card push-50">
-                        <div class="img-container push-50 push-30-r">
-                            <img class="img-responsive" src="assets/img/background/news-06.png" alt=""/>
-                        </div>
-                        <div class="card-label">
-                            <div class="card-text">
-                                <h3 class="h3 font-w600 text-white text-uppercase push-5">Advertorial: Answering the Question of Durability is TAVI's Next</h3>
-                                <h5 class="h5 font-w400 text-white-op">See more at: https://bit.ly/2qWoZvt</h5>
+                            <div class="block-content block-content-full text-center">
+                                <!-- Lines Chart Container -->
+                                <div style="height: 330px;"><canvas class="js-chartjs-lines"></canvas></div>
                             </div>
-                            <h6 class="h6 font-w600 text-white card-date">18 November 2019</h6>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="text-center push-100">
-                <button class="btn btn-noborder btn-lg btn-danger" style="background-color:rgb(169,43,43);font-weight:100;min-width: 200px;">See All News <i class="fa fa-long-arrow-right"></i></button>
             </div>
         </div>
-        <!-- END News & Events -->
-        <!-- Get Started -->
+        <!-- END Recent Topics -->
+        <div class="container-fluid bg-real-blue">
+            <div class="container">
+                <section class="content content-full content-boxed overflow-hidden">
+                    <div class="row d-flex">
+                        <div class="col-sm-4 padding-20">
+                            <h3 class="h3 text-white font-w600 push-20">2020 Annual Report</h3>
+                            <img class="push-20" src="assets/img/background/investor-dummy-img1.png" alt="" style="max-width: fit-content;"/>
+                            <h6 class="h6 text-white-op font-w600"><i class="fa fa-download"></i> Download Report</h6>
+                        </div>
+                        <div class="col-sm-4 padding-20 border-white-op-r border-white-op-l">
+                            <h3 class="h3 text-white font-w600 push-20">Upcoming Event</h3>
+                            <h6 class="h6 text-white-op font-w600">Stay tuned for upcoming events.</h6>
+                        </div>
+                        <div class="col-sm-4 padding-20">
+                            <h3 class="h3 text-white font-w600 push-20">Quick Links</h3>
+                            <h6 class="h6 text-white-op font-w600 push-10">&gt; Board of Directors</h6>
+                            <h6 class="h6 text-white-op font-w600">&gt; Corporate Governance</h6>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <!-- Subscribe -->
         <div id="subscribe-div">
             <div class="container">
                 <section class="content content-full content-boxed">
@@ -402,7 +328,7 @@
                 </section>
             </div>
         </div>
-        <!-- END Get Started -->
+        <!-- END Subscribe -->
     </main>
     <!-- END Main Container -->
     <!-- Footer -->
@@ -481,13 +407,64 @@ CountTo, Placeholder, Cookie and App.js -->
 <script src="assets/js/core/js.cookie.min.js"></script>
 <script src="assets/js/app.js"></script>
 <!-- Page JS Code -->
-<script src="assets/js/plugins/slick/slick.min.js"></script>
+<script src="assets/js/plugins/chartjs/Chart.min.js"></script>
 <script>
     $(function () {
         // Init page helpers (Appear + CountTo plugins)
         App.initHelpers(['appear', 'appear-countTo']);
-        App.initHelpers('slick');
+
+        initChartsChartJS();
     });
+
+    var initChartsChartJS = function () {
+        // Get Chart Containers
+        var $chartLinesCon  = jQuery('.js-chartjs-lines')[0].getContext('2d');
+
+        // Set Chart and Chart Data variables
+        var $chartLines;
+        var $chartLinesBarsRadarData;
+
+        // Set global chart options
+        var $globalOptions = {
+            scaleFontFamily: "'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif",
+            scaleFontColor: '#999',
+            scaleFontStyle: '600',
+            tooltipTitleFontFamily: "'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif",
+            tooltipCornerRadius: 3,
+            maintainAspectRatio: false,
+            responsive: true
+        };
+
+        // Lines/Bar/Radar Chart Data
+        $chartLinesBarsRadarData = {
+            labels: ['MON', 'TUE', 'WED', 'THU', 'FRI', 'SAT', 'SUN'],
+            datasets: [
+                {
+                    label: 'Last Week',
+                    fillColor: 'rgba(220,220,220,.3)',
+                    strokeColor: 'rgba(220,220,220,1)',
+                    pointColor: 'rgba(220,220,220,1)',
+                    pointStrokeColor: '#fff',
+                    pointHighlightFill: '#fff',
+                    pointHighlightStroke: 'rgba(220,220,220,1)',
+                    data: [30, 32, 40, 45, 43, 38, 55]
+                },
+                {
+                    label: 'This Week',
+                    fillColor: 'rgba(171, 227, 125, .3)',
+                    strokeColor: 'rgba(171, 227, 125, 1)',
+                    pointColor: 'rgba(171, 227, 125, 1)',
+                    pointStrokeColor: '#fff',
+                    pointHighlightFill: '#fff',
+                    pointHighlightStroke: 'rgba(171, 227, 125, 1)',
+                    data: [15, 16, 20, 25, 23, 25, 32]
+                }
+            ]
+        };
+
+        // Init Charts
+        $chartLines = new Chart($chartLinesCon).Line($chartLinesBarsRadarData, $globalOptions);
+    };
 </script>
 
 
